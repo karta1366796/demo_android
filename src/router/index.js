@@ -18,9 +18,45 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Register.vue')
   },
+
   
  
   
+
+  
+  {
+    path: '/courseSelection',
+    name: 'courseSelection',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/courseSelection.vue')
+  },
+  {
+    path: '/lesson',
+    name: 'lesson',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/lesson.vue')
+  },
+  {
+    path: '/teacher',
+    name: 'teacher',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/teacher.vue')
+  },
+  {
+    path: '/classRoom',
+    name: 'classRoom',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/classRoom.vue')
+  },
+
 ]
 
 const router = createRouter({
@@ -29,3 +65,5 @@ const router = createRouter({
 })
 
 export default router
+
+
