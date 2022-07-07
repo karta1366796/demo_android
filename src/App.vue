@@ -1,4 +1,6 @@
 <template>
+  <router-link to="/fe/login">a</router-link>
+  <router-link to="/fe/register">b</router-link>
   <router-view />
 </template>
 

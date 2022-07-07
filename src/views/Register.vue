@@ -140,7 +140,7 @@ const register = () => {
   // )
   axios({
     method: "post",
-    url: "https://10.20.1.97:8090/api/users/register",
+    url: "http://10.20.1.97:8090/api/users/register",
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -209,7 +209,7 @@ const register = () => {
 
       return axios({
         method: "post",
-        url: "https://10.20.1.97:8090/api/users/finishauth",
+        url: "http://10.20.1.97:8090/api/users/finishauth",
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
@@ -259,7 +259,7 @@ function displayError(error) {
   if (a == true) {
     errorText.value = "Duplicate account registration !!";
   }
-  console.error(error);
+  // console.error(error);
 }
 </script>
 
